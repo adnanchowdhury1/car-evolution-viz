@@ -1,6 +1,6 @@
 let currentScene = 0;
 
-d3.csv("data/vehicles.csv").then(rawData => {
+d3.csv("data/vehicles_small.csv").then(rawData => {
     // 1) Log available columns
     console.log("Columns in your CSV:", Object.keys(rawData[0]));
 
