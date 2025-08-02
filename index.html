@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>How Cars Evolved</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>How Cars Evolved from 1990 to 2020</h1>
+
+    <!-- ── CONTROLS ── -->
+    <div id="controls" style="margin-bottom:1em; text-align:center;">
+        <label>
+            Show cars up to year
+            <input type="range" id="year-slider" min="1990" max="2020" value="2020" step="1">
+            <span id="year-value">2020</span>
+        </label>
+    </div>
+
+    <!-- ── VISUALIZATION CONTAINER ── -->
+    <div id="viz-container"></div>
+
+    <!-- ── NAVIGATION ── -->
+    <div class="nav-buttons">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+
+    <!-- ── SCRIPTS ── -->
+    <script src="script.js"></script>
+    <script src="scenes/scene0.js"></script>
+    <script src="scenes/scene1.js"></script>
+    <script src="scenes/scene2.js"></script>
+    <script src="scenes/scene3.js"></script>
+</body>
+
+</html>
